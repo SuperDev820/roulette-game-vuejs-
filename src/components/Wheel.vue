@@ -54,19 +54,17 @@ export default {
     ]),
     rotateWheelStyle() {
       return {
-        transition: `transform ${this.turning_duration +
-          this.delay}s cubic-bezier(0.3, 1, 0.7, 1),
-                     ${this.turning_duration +
-                       this.delay}s filter cubic-bezier(0.1, 1, 0.8, 1),
-                     ${this.turning_duration +
-                       this
-                         .delay}s -webkit-filter cubic-bezier(0.1, 1, 0.8, 1)`,
-        transform: "translate(-50%, -50%) rotate(" + this.turning_deg + "deg)",
+        transition: `transform ${this.turning_duration + this.delay}s cubic-bezier(0.3, 1, 0.7, 1),
+                     ${this.turning_duration + this.delay}s filter cubic-bezier(0.1, 1, 0.8, 1),
+                     ${this.turning_duration + this.delay}s -webkit-filter cubic-bezier(0.1, 1, 0.8, 1)`,
+        // transform: "translate(-50%, -50%) rotate(" + this.turning_deg + "deg)",
+        transform: "translate(-50%, -50%) rotate(2000deg)",
       };
     },
     resetWheelStyle() {
       return {
-        transform: "translate(-50%, -50%) rotate(0deg)",
+        // transform: "translate(-50%, -50%) rotate(0deg)",
+        animation: "wheelMove 18s linear infinite",
       };
     },
     // rotateBallStyle() {
@@ -154,4 +152,5 @@ export default {
     }
   }
 }
+
 </style>

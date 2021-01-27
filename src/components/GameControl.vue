@@ -267,6 +267,7 @@ export default {
   }
   .btn-landscape {
     display: block;
+    z-index: 999;
   }
 
   .control-button.btn-turn img {

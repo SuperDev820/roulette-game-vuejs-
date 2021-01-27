@@ -1,5 +1,8 @@
 <template>
   <div class="betting-table">
+    <!-- <div>
+      <span>MAX WIN € </span>
+    </div> -->
     <div class="betting-table__landscape">
       <div class="table-landscape">
         <div class="numbers">
@@ -15,7 +18,7 @@
           <div class="num red" v-bind:class="classBindHovering(9)">
             <span>9</span>
           </div>
-          <div class="num black" v-bind:class="classBindHovering(12)">
+          <div class="num red" v-bind:class="classBindHovering(12)">
             <span>12</span>
           </div>
           <div class="sector" data-sector="1"><span class="vt">2:1</span></div>
@@ -28,7 +31,7 @@
           <div class="num black" v-bind:class="classBindHovering(8)">
             <span>8</span>
           </div>
-          <div class="num red" v-bind:class="classBindHovering(11)">
+          <div class="num black" v-bind:class="classBindHovering(11)">
             <span>11</span>
           </div>
           <div class="sector" data-sector="2"><span class="vt">2:1</span></div>
@@ -562,7 +565,7 @@ export default {
     }
     .sector {
       border-right-width: 0;
-      font-size: 2.5vw;
+      font-size: 2.4vw;
       span {
         transform: rotate(270deg);
       }

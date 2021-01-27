@@ -23,11 +23,11 @@
         MIN €<span class="history-min__value">0.10</span>
       </p>
       <p class="history-max">
-        MAX €<span class="history-max__value">100</span>
+        MAX €<span class="history-max__value">100.00</span>
       </p>
-      <p class="history-max-table">
+      <!-- <p class="history-max-table">
         MAX TAVOLO €<span class="history-max-table__vale">1000</span>
-      </p>
+      </p> -->
     </div>
   </div>
 </template>
@@ -100,13 +100,13 @@ export default {
   }
 
   .history-tooltip {
-    margin-left: clamp(10px, 1.5vw, 30px);
+    /*margin-left: clamp(10px, 1.5vw, 30px);*/
     color: white;
     font-size: clamp(16px, 1vw, 20px);
     display: flex;
     gap: 1vw;
-    justify-content: flex-end;
-    padding-right: 3vw;
+    justify-content: center;
+    /*padding-right: 3vw;*/
     width: 100%;
   }
   .history-tooltip p {
