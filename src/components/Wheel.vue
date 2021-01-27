@@ -20,7 +20,13 @@
         <img
           src="../assets/images/handles.png"
           class="wheel-handle__handles"
-          :style="[is_turning ? rotateWheelStyle : resetWheelStyle]"
+          :style="[is_turning ? displayWheelNone : resetWheelStyle]"
+          alt=""
+        />
+        <img
+          src="../assets/images/handles.png"
+          class="wheel-handle__handles"
+          :style="[is_turning ? rotateWheelStyle : displayWheelNone]"
           alt=""
         />
         <img
@@ -76,7 +82,11 @@ export default {
     resetWheelStyle() {
       return {
         // transform: "translate(-50%, -50%) rotate(0deg)",
-        animation: "wheelMove 18s linear infinite",
+        // animation: "wheelMove 18s linear infinite",
+        "-webkit-animation": "wheelMove 18s linear infinite",
+        // mozAnimation: "wheelMove 18s linear infinite",
+        // msAnimation: "wheelMove 18s linear infinite",
+        // oAnimation: "wheelMove 18s linear infinite",
       };
     },
     // rotateBallStyle() {
