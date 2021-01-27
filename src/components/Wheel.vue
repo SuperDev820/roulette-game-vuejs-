@@ -6,7 +6,14 @@
         src="../assets/images/wheel_numbers.png"
         ref="wheel_numbers"
         class="wheel-numbers"
-        :style="[is_turning ? rotateWheelStyle : resetWheelStyle]"
+        :style="[is_turning ? displayWheelNone : resetWheelStyle]"
+        alt=""
+      />
+      <img
+        src="../assets/images/wheel_numbers.png"
+        ref="wheel_numbers"
+        class="wheel-numbers"
+        :style="[is_turning ? rotateWheelStyle : displayWheelNone]"
         alt=""
       />
       <div class="wheel-handle">
@@ -57,9 +64,14 @@ export default {
         transition: `transform ${this.turning_duration + this.delay}s cubic-bezier(0.3, 1, 0.7, 1),
                      ${this.turning_duration + this.delay}s filter cubic-bezier(0.1, 1, 0.8, 1),
                      ${this.turning_duration + this.delay}s -webkit-filter cubic-bezier(0.1, 1, 0.8, 1)`,
-        // transform: "translate(-50%, -50%) rotate(" + this.turning_deg + "deg)",
-        transform: "translate(-50%, -50%) rotate(2000deg)",
+        transform: "translate(-50%, -50%) rotate(" + this.turning_deg + "deg)",
+        // transform: "translate(-50%, -50%) rotate(2000deg)",
       };
+    },
+    displayWheelNone() {
+      return {
+        zIndex: "-999",
+      }
     },
     resetWheelStyle() {
       return {
