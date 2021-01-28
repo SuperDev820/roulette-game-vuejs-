@@ -3,7 +3,7 @@
     <ul class="summary-info">
       <li>
         SALDO MODALITA DEMO <span class="text-white">€</span
-        ><span class="total-money">{{ money }}</span>
+        ><span class="total-money">{{ money-stakeTotal }}</span>
       </li>
       <li><span>PIAZZA LE TUE PUNTATE</span></li>
       <li>
