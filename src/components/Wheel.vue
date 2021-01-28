@@ -82,11 +82,11 @@ export default {
     resetWheelStyle() {
       return {
         // transform: "translate(-50%, -50%) rotate(0deg)",
-        // animation: "wheelMove 18s linear infinite",
+        animation: "wheelMove 18s linear infinite",
         "-webkit-animation": "wheelMove 18s linear infinite",
-        // mozAnimation: "wheelMove 18s linear infinite",
-        // msAnimation: "wheelMove 18s linear infinite",
-        // oAnimation: "wheelMove 18s linear infinite",
+        "-moz-animation": "wheelMove 18s linear infinite",
+        "-ms-animation": "wheelMove 18s linear infinite",
+        "-o-animation": "wheelMove 18s linear infinite",
       };
     },
     // rotateBallStyle() {

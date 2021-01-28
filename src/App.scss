@@ -99,6 +99,26 @@ img {
   from {transform: translate(-50%, -50%) rotate(0deg);}
   to {transform: translate(-50%, -50%) rotate(-360deg);}
 }
+@-moz-keyframes wheelMove {
+  from {transform: translate(-50%, -50%) rotate(0deg);}
+  to {transform: translate(-50%, -50%) rotate(-360deg);}
+}
+@-ms-keyframes wheelMove {
+  from {transform: translate(-50%, -50%) rotate(0deg);}
+  to {transform: translate(-50%, -50%) rotate(-360deg);}
+}
+
+@-o-keyframes wheelMove {
+  from {transform: translate(-50%, -50%) rotate(0deg);}
+  to {transform: translate(-50%, -50%) rotate(-360deg);}
+}
+
+@keyframes wheelMove {
+  from {transform: translate(-50%, -50%) rotate(0deg);}
+  to {transform: translate(-50%, -50%) rotate(-360deg);}
+}
+
+
 
 @keyframes orbit2 {
   0% {

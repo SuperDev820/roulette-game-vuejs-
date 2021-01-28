@@ -2,12 +2,12 @@
   <div class="summary">
     <ul class="summary-info">
       <li>
-        SALDO MODALITA DEMO <span class="text-white">€</span
+        SALDO MODALITA DEMO <span class="text-white">€ </span
         ><span class="total-money">{{ money-stakeTotal }}</span>
       </li>
       <li><span>PIAZZA LE TUE PUNTATE</span></li>
       <li>
-        PUNTATA TOTALE <span class="text-white">€</span
+        PUNTATA TOTALE <span class="text-white">€ </span
         ><span class="total-shake">{{ stakeTotal }}</span>
       </li>
     </ul>
