@@ -6,6 +6,7 @@
         <ChipField />
       </div>
       <div class="game-center">
+        <!-- <MaxWin /> -->
         <BettingTable />
         <GameControl />
       </div>
@@ -19,6 +20,7 @@
 
 <script>
 import Wheel from "./components/Wheel";
+// import MaxWin from "./components/MaxWin";
 import BettingTable from "./components/BettingTable";
 import History from "./components/History";
 import ChipField from "./components/ChipField";
@@ -29,6 +31,7 @@ export default {
   name: "App",
   components: {
     Wheel,
+    // MaxWin,
     BettingTable,
     History,
     ChipField,
